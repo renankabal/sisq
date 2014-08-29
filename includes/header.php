@@ -7,6 +7,3 @@ $title="SISQ";
 include("classes/DB.class.php");
 $conectar = new DB;
 $conectar = $conectar->conectar();
-
-$query=pg_query("SELECT * FROM usuarios");
-echo pg_num_rows($query);
