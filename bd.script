@@ -1,0 +1,46 @@
+--==============================
+--FUNÇÃO: Sistema que controla e gerencia a avaliação de qualidade de funcionários de uma empresa
+--AUTOR: RENAN JHONATHA
+--EMAIL: renan@proesc.com
+--CRIADO: 29 DE AGOSTO DE 2014
+--ULTIMA MODIFICAÇÃO EM: 29 DE AGOSTO DE 2014
+--==============================
+
+
+--Criando o usuário do banco de dados
+CREATE ROLE sisq LOGIN
+  ENCRYPTED PASSWORD 'md5a62c2a23254fd49147119adc96f43ed2'
+  SUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION; --senha:sisq@sistemap2014
+
+
+--Criando o banco de dados
+CREATE DATABASE sisq
+  WITH OWNER = sisq
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'pt_BR.UTF-8'
+       LC_CTYPE = 'pt_BR.UTF-8'
+       CONNECTION LIMIT = -1;
+
+--================================
+--Criando as tabelas do banco de dados
+
+--criando a tabela usuários
+CREATE TABLE usuarios(
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR (255),
+	email VARCHAR (70),
+	senha VARCHAR(100),
+	nivel INTEGER,
+	status INTEGER,
+	datacriacao TIMESTAMP
+);
+
+--povoando com o usuario ADMINISTRADOR e um USUÁRIO
+INSERT INTO
+	usuarios (nome, email, senha, nivel, status, datacriacao)
+VALUES
+	('ADMINISTRADOR', 'administrador@administrador.com.br', 'sisq@sistemap2014', 2, 1, now());
+
+--povoando com o usuario COMUM
+INSERT INTO usuarios (nome, email, senha, nivel, status, datacriacao) VALUES ();
