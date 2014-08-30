@@ -11,6 +11,7 @@ a{
 
 body{
 	font: 300 16px arial;
+	
 }
 
 #cadastrar{
@@ -21,7 +22,7 @@ body{
 	-moz-border-radius-bottomleft: 8px;
 	-moz-border-radius-bottomright: 15px;	
 	height: 40px;
-	width: 120px;
+	width: 140px;
 	background: #F1F1F1;
 	text-align: center;
 	position: absolute;
