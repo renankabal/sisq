@@ -9,14 +9,23 @@ class Cadastro{
 		$email = ucwords(strtolower($email));
 		$senha = sha1($senha."hxtutors");
 
+		$validaemail=pg_query("SELECT nome, email FROM usuarios WHERE email='$email'");
+		$contar=pg_num_rows($validaemail);
+
+		if($contar == 0){
 		// Inserção no banco de dados
 		$insert=pg_query("INSERT INTO usuarios (nome, email, senha, nivel, status, datacriacao) VALUES ('$nome', '$email', '$senha', 1, 0, now())");
-		if(isset($insert)){
-			$flash = "Cadastro realizado com sucesso, aguarde a aprovacao do ADMINISTRADOR!";
 		}else{
-			$flash = "Ops! Houve um erro em nosso sistema, contate o suporte!";
+			$flash = "Desculpe, mas já existe um usuário cadastrado com este e-mail em nosso sistemas";	
 		}
-		// Retorno para o usuário
-		echo $flash;
+			if(isset($insert)){
+				$flash = "Cadastro realizado com sucesso, aguarde a aprovacao do ADMINISTRADOR!";
+			}else{
+				if (empty($flash)){
+				$flash = "Ops! Houve um erro em nosso sistema, contate o suporte!";
+				}
+			}
+			// Retorno para o usuário
+			echo $flash;
 	}
 }
