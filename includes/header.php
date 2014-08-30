@@ -11,9 +11,12 @@ if(isset($_GET["acao"])){
 	$startaction=1;
 }
 
-// Conexão com o banco de dados
+// Incluindo as classes
 include("classes/Cadastro.class.php");
 include("classes/DB.class.php");
+include("classes/Login.class.php");
+
+// Conexão com o banco de dados
 $conectar = new DB;
 $conectar = $conectar->conectar();
 
@@ -51,6 +54,13 @@ if($startaction == 1){
 		// 	}
 		// }
 
+	}
+}
+
+// Método de login
+if($startaction == 1){
+	if($acao == "logar"){
+		
 	}
 }
 
