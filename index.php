@@ -1,35 +1,35 @@
-<script>
+    <script>
     var timeScreen=0;
     var limitToStart=0; // 0 é igual a 1 minuto com o mouse parado vai aparecer o efeito
     var divScreen;
 
     window.onload=function(){
-    divScreen=document.getElementById("screen");
-    setInterval(startScreen, 3000);
+        divScreen=document.getElementById("screen");
+        setInterval(startScreen, 3000);
 
     document.onmousemove=function(){
-    var d = new Date();
-    var hours = d.getHours();
-    var minutes = d.getMinutes();
-    timeScreen=""+hours+""+minutes+"";
-    divScreen.style.display='none';
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        timeScreen=""+hours+""+minutes+"";
+        divScreen.style.display='none';
     }
     document.onkeydown=function(){
-    var d = new Date();
-    var hours = d.getHours();
-    var minutes = d.getMinutes();
-    timeScreen=""+hours+""+minutes+"";
-    divScreen.style.display='none';
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        timeScreen=""+hours+""+minutes+"";
+        divScreen.style.display='none';
     }
 
     function startScreen(){
-    var d = new Date();
-    var hours = d.getHours();
-    var minutes = d.getMinutes();
-    currentTime=""+hours+""+minutes+"";
-    if(timeScreen > 0 && Number(timeScreen)+limitToStart  <  currentTime){
-    divScreen.style.display='block';
-        }
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        currentTime=""+hours+""+minutes+"";
+            if(timeScreen > 0 && Number(timeScreen)+limitToStart  <  currentTime){
+                divScreen.style.display='block';
+            }
     }
 
 }
@@ -38,9 +38,6 @@
 //Inclui o cabeçalho de conexão com o banco de dados 
 include("includes/header.php");
 
-if(isset($logado)){
-	echo "logado";
-}
 ?>
 
 <!DOCTYPE html>
