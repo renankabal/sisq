@@ -1,8 +1,12 @@
+<?php
+	//Inclui o cabeçalho de conexão com o banco de dados 
+	include("includes/header.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SISQ</title>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' /> -->
+	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="estilos/style.css">
 </head>
 
@@ -10,7 +14,7 @@
 <div id="cadastrar"><a href="cadastro.php" title="Clique aqui para se cadastrar">Cadastre-se &raquo;</a></div>
 <div id="login" class="form bradius">
 <center><img src="imagens/logo.png"></center>
-	<div class="message"></div>
+	<div class="message"  style="<?php echo $display; ?>"></div>
 	<div class="acomodar">
 		<form action="" method="POST">
 		<label for="email">Login </label><input id="email" type="text" class="txt bradius" name="email" value="" autofocus required /><br />
