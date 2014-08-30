@@ -4,7 +4,7 @@
     <tr>
         <td>
             <font size=3 text-align=justify>
-            Temos o grande prazer de receber você <b><?php echo $pessoaatual; ?></b>
+            Temos o grande prazer de receber você <b><?php echo $pessoaatual; ?></b></br>
             A empresa Proesc Soluções em TI, criada no final de 2008, tem como atividade predominante o desenvolvimento de Software para governo eletrônico.<br>
             <b>Negócio:</b>Soluções em Tecnologia da informação.<br>
             <b>Missão:</b>Promover o desenvolvimento de soluções tecnológicas inovadoras, visando a agilidade na gestão da informação com responsabilidade social.<br>
