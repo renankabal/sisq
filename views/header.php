@@ -6,5 +6,10 @@
 	<title><?php echo $page; ?></title>
 	<link rel="shortcut icon" href="<?php echo $favicon; ?>" />
 	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	
+	<!-- Adicionado arquivos do BOOTSTRAP e JQUERY -->
+	<link rel="stylesheet" href="estilos/bootstrap.min.css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
