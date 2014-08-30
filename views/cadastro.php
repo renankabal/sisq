@@ -13,7 +13,7 @@ include("header.php");
 		<label for="nome">Nome </label><input id="nome" onkeyup="up(this)" type="text" class="txt bradius" name="nome" autofocus /><br />
 		<label for="email">Login </label><input id="email" onkeyup="down(this)" type="text" class="txt bradius" name="email" /><br />
 		<label for="senha">Senha </label><input id="senha" type="password" class="txt bradius" name="senha" /><br />
-		<input type="submit" class="sb bradius" value="Cadastrar" />
+		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Cadastrar" />
 		</form>
 		<!-- acomodar -->
 	</div>

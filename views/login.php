@@ -14,13 +14,15 @@ include("header.php");
 		<form action="index.php?acao=logar" method="POST">
 		<label for="email">Login </label><input placeholder="Digite seu login" id="email" type="text" class="txt bradius" name="email" value="" autofocus /><br />
 		<label for="senha">Senha </label><input placeholder="Digite sua senha" id="senha" type="password" class="txt bradius" name="senha" value="" /><br />
-		<input type="submit" class="sb bradius" value="Entrar" />
+		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Entrar" />
 		</form>
 		<!-- acomodar -->
 	</div>
 	<br />
 	<!-- fechamento login -->
-<h6><center>copyright ©</center></h6>
+<h6><center>
+Todos os diretos reservados copyright ©
+</center></h6>
 </div>
 	<!-- boneco do rodapé -->
 <!-- 	<footer class="footer">
