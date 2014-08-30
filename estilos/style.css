@@ -34,9 +34,10 @@ body{
 	width: 100%;
 	padding: 3px;
 	color: #666;
-	background: #F1F1F1;
+	background: #FF0000;
 	margin: 0 auto;
 	text-align: center;
+	color: #FAFAD2;
 }
 
 #cadastrar a{
