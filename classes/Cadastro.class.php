@@ -12,7 +12,7 @@ class Cadastro{
 		// Inserção no banco de dados
 		$insert=pg_query("INSERT INTO usuarios (nome, email, senha, nivel, status, datacriacao) VALUES ('$nome', '$email', '$senha', 1, 0, now())");
 		if(isset($insert)){
-			$flash = "Cadastro realizado com sucesso, aguarde a aprovação do ADMINISTRADOR!";
+			$flash = "Cadastro realizado com sucesso, aguarde a aprovacao do ADMINISTRADOR!";
 		}else{
 			$flash = "Ops! Houve um erro em nosso sistema, contate o suporte!";
 		}
