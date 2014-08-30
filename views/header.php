@@ -3,6 +3,19 @@
 <html lang="pt-br">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <head>
+	<!-- Adiciona função JavaScript -->
+	<script type="text/JavaScript">
+	function up(lstr){ // converte minusculas em maiusculas
+		var str=lstr.value; //obtem o valor
+		lstr.value=str.toUpperCase(); //converte as strings e retorna ao campo
+	}
+	function down(lstr){ // converte maiusculas em minusculas
+		var str=lstr.value; //obtem o valor
+		lstr.value=str.toLowerCase(); //converte as strings e retorna ao campo
+	}
+	</script>
+	<!-- Fim da função JavaCsript -->
+	
 	<title><?php echo $page; ?></title>
 	<link rel="shortcut icon" href="<?php echo $favicon; ?>" />
 	<link rel="stylesheet" type="text/css" href="estilos/style.css">
