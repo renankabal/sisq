@@ -7,6 +7,7 @@ include("header.php");
 <div id="cadastrar"><a href="index.php?acao=logout" title="Clique aqui para sair do sistema">Logout &raquo;</a></div>
 
 	<?php
+
 		if($nivel == 2){ ?>
 		<p><br></p>
 		<p><br></p>
@@ -46,10 +47,7 @@ include("header.php");
 		<p><br></p>
 		<p><br></p>
 		<p><br></p>
-		<center>
-		<h1>Usuário Comum</h1>
-		<h1>Conteúdo do formulario aqui</h1>
-		</center>
+		<?php include("abertura.php"); ?>
 	<?php	
 		}
 	?>
