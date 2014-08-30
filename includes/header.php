@@ -58,6 +58,13 @@ if($startaction == 1){
 				echo "</div>";
 	}
 }
+// Método de Logout
+if($startaction == 1){
+	if($acao == "logout"){
+		setcookie("logado", "");
+		unset($_SESSION["email"], $_SESSION["senha"], $_SESSION["nivel"]);
+	}
+}
 // Métodos de checar usuário
 if(isset($_SESSION["email"]) && isset ($_SESSION["senha"])){
 	$logado=1;
