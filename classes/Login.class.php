@@ -10,6 +10,8 @@ class Login{
 			$dados=pg_fetch_array($buscar);
 
 			if ($dados["status"] == 1){
+				$_SESSION["id"] = $dados["id"];
+				$_SESSION["nome"] = $dados["nome"];
 				$_SESSION["email"] = $dados["email"];
 				$_SESSION["senha"] = $dados["senha"];
 				$_SESSION["nivel"] = $dados["nivel"];
@@ -20,7 +22,8 @@ class Login{
 			}
 		}
 			if(isset($log)){
-				$flash="Voce foi logado com sucesso";
+				// var_dump($dados);				
+				$flash="Seja Bem Vindo";				
 			}else{
 				if(empty($flash)){
 				$flash="Usuario nao encontrado!";
