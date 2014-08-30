@@ -1,11 +1,13 @@
 <?php
-// Liga o display erros
-// init_set("php_value display_erros", "On");
+// starts
+ob_start();
+session_start();
 
 // Globais
 $title="SISQ";
 $startaction="";
 $msg="";
+$favicon="imagens/logo.ico";
 if(isset($_GET["acao"])){
 	$acao = $_GET["acao"];
 	$startaction=1;
@@ -28,31 +30,10 @@ if($startaction == 1){
 		$email=$_POST["email"];		
 		$senha=$_POST["senha"];
 		// Falta fazer as validações aqui!!!!!!!
-
-		// if(empty($nome) || empty($email) || empty($senha)){
-		// 	$msg="Preencha todos os campos!";	
-		// }
-		// // Todos os campos preenchidos
-		// else{
-		// 	// E-mail válido
-		// 	if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-		// 		// Senha inválida
-		// 		if(strlen($senha) < 8){
-		// 			$msg="Preencha todos os campos!";
-		// 		}
-		// 		//Senha válida
-		// 		else{
 					$conectar = new Cadastro;
 					echo "<div class='flash'>";
 					$conectar = $conectar->cadastrar($nome, $email, $senha);
 					echo "</div>";
-		// 		}
-		// 	}
-		// 	// E-mail inválido
-		// 	else{
-		// 		$msg="Digite seu e-mail corretamente!";
-		// 	}
-		// }
 
 	}
 }
@@ -60,8 +41,27 @@ if($startaction == 1){
 // Método de login
 if($startaction == 1){
 	if($acao == "logar"){
-		
+		// Dados
+		$email=$_POST["email"];
+		$senha=sha1($_POST["senha"]."hxtutors");
+
+		// var_dump($email);
+		// var_dump($senha);
+		// exit();
+
+		// Falta fazer as validações aqui!!!!!!!
+				
+				// Executa a busca pelo usuário
+				$login = new Login;
+				echo "<div class='flash'>";
+				$login = $login->logar($email, $senha);
+				echo "</div>";
 	}
+}
+// Métodos de checar usuário
+if(isset($_SESSION["email"]) && isset ($_SESSION["senha"])){
+	$logado=1;
+	$nivel=$_SESSION["nivel"];
 }
 
 // Variáveis de estilos
