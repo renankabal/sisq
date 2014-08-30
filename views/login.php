@@ -12,7 +12,7 @@ include("header.php");
 	<div class="message"  style="<?php echo $display; ?>"></div>
 	<div class="acomodar">
 		<form action="index.php?acao=logar" method="POST">
-		<label for="email">Login </label><input placeholder="Digite seu login" id="email" type="text" class="txt bradius" name="email" value="" autofocus /><br />
+		<label for="email">Login </label><input onkeyup="down(this)" placeholder="Digite seu login" id="email" type="text" class="txt bradius" name="email" value="" autofocus /><br />
 		<label for="senha">Senha </label><input placeholder="Digite sua senha" id="senha" type="password" class="txt bradius" name="senha" value="" /><br />
 		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Entrar" />
 		</form>
