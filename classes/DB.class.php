@@ -1,7 +1,6 @@
 <?php
 
-	class DB
-	{
+	class DB{
 		public function conectar(){
 			// Falta melhorar esssa parte
 			// $host="locahost";
