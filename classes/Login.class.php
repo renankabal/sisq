@@ -11,7 +11,7 @@ class Login{
 			$_SESSION["email"] = $dados["email"];
 			$_SESSION["senha"] = $dados["senha"];
 			$_SESSION["nivel"] = $dados["nivel"];
-			setcookie("Logado", 1);
+			setcookie("logado", 1);
 			$log=1;
 		}
 			if(isset($log)){
