@@ -40,7 +40,7 @@ CREATE TABLE usuarios(
 INSERT INTO
 	usuarios (nome, email, senha, nivel, status, datacriacao)
 VALUES
-	('ADMINISTRADOR', 'administrador@administrador.com.br', 'sisq@sistemap2014', 2, 1, now());
+	('ADMINISTRADOR', 'administrador@administrador.com.br', '77037ec13e3dffd356c7c5eded31e6db1de4274b', 2, 1, now());--senha(sha1): 123456
 
 --povoando com o usuario COMUM
 INSERT INTO usuarios (nome, email, senha, nivel, status, datacriacao) VALUES ();
