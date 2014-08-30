@@ -6,7 +6,7 @@ class Cadastro{
 
 		// Tratamento das variáveis
 		$nome = ucwords(strtolower($nome));
-		$email = ucwords(strtolower($email));
+		$email = strtolower($email);
 		$senha = sha1($senha."hxtutors");
 
 		$validaemail=pg_query("SELECT nome, email FROM usuarios WHERE email='$email'");
@@ -16,7 +16,7 @@ class Cadastro{
 		// Inserção no banco de dados
 		$insert=pg_query("INSERT INTO usuarios (nome, email, senha, nivel, status, datacriacao) VALUES ('$nome', '$email', '$senha', 1, 0, now())");
 		}else{
-			$flash = "Desculpe, mas já existe um usuário cadastrado com este e-mail em nosso sistemas";	
+			$flash = "Desculpe, mas ja existe um usuario cadastrado com este e-mail em nosso sistema!";	
 		}
 			if(isset($insert)){
 				$flash = "Cadastro realizado com sucesso, aguarde a aprovacao do ADMINISTRADOR!";
