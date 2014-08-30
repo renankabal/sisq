@@ -5,13 +5,23 @@
 	list-style: none;
 }
 
+input[type=submit]{
+        background:#006699;
+        color:#ffffff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+}
+
 a{
 	text-decoration: none;
 }
 
 body{
-	font: 300 16px arial;
-	
+	font: 300 16px arial;	
 }
 
 #cadastrar{
@@ -46,15 +56,6 @@ body{
 	display: block;
 	color: #999;
 	font: 400 18px arial;	
-}
-
-#cadastrar:hover a{
-	color: #FFF;	
-}
-
-#cadastrar:hover{
-	background: #678b97;
-	color: #FFF;
 }
 
 #login{
@@ -138,3 +139,4 @@ body{
 .fright{
 	float: right;
 }
+
