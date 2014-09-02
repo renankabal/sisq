@@ -1,18 +1,7 @@
-<?php
-
-$page="SISQ";
-include("header.php");
-?>
 <!-- Botão de cadastrar novo usuário -->
 <div id="cadastrar"><a href="index.php?acao=logout" title="Clique aqui para sair do sistema">Logout &raquo;</a></div>
 
-	<?php
-
-		if($nivel == 2){ ?>
-		<p><br></p>
-		<p><br></p>
-		<p><br></p><center>
-		<table width="80%" border="1" cellpadding="0" >
+<table width="100%" border="1" cellpadding="0">
 			<tr>
 				<th>Nome</th>
 				<th>Status</th>
@@ -26,9 +15,9 @@ include("header.php");
 					while($linha=pg_fetch_array($buscarusuarios)){
 			?>
 			<tr>
-				<td><?php echo $linha["nome"]; ?></td>
-				<td align="center"><?php echo $linha["status"]; ?></td>
-				<td align="center"><?php
+				<th><?php echo $linha["nome"]; ?></th>
+				<th><?php echo $linha["status"]; ?></th>
+				<th><?php
 					$id = $linha["id"];
 					if ($linha["status"] == 0){
 							echo "<a href='index.php?acao=aprovar&amp;id=$id'>Aprovar</a>";
@@ -36,24 +25,10 @@ include("header.php");
 							echo "<a href='index.php?acao=bloquear&amp;id=$id'>Bloquear</a>";
 						}
 					?>
-					</td>
+				</th>
 			</tr>
 			<?php 
 					}
 				}	
 			?>
-		</table></center>
-	<?php
-		}else{ ?>
-		<p><br></p>
-		<p><br></p>
-		<p><br></p>
-		<?php 
-			include("abertura.php");
-		?>
-	<?php	
-		}
-	?>
-	<br />
-</body>
-</html>
+</table>

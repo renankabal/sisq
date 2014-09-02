@@ -15,7 +15,7 @@
 </table>
 
 <center>
-    <a href="" title="Clique aqui para iniciar questionário de avaliação">
-        <input type="button" value="INICIAR AVALIAÇÃO">
+    <a href="ajuda.php" title="Clique aqui para iniciar o questionário de avaliação">
+        <input type="button" class="btn btn-primary" value="INICIAR AVALIAÇÃO">
     </a>
 <center>
