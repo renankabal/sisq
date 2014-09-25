@@ -12,28 +12,18 @@ CREATE ROLE sisq LOGIN
   ENCRYPTED PASSWORD 'md5a62c2a23254fd49147119adc96f43ed2'
   SUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION; --senha:sisq@sistemap2014
 
-
 --Criando o banco de dados (CODIFICAÇÃO UTF-8)
 CREATE DATABASE sisq
   WITH OWNER = sisq
-       ENCODING = 'LATIN-1'
+       ENCODING = 'UTF8'
        TABLESPACE = pg_default
-       LC_COLLATE = 'pt_BR.UTF-8'
-       LC_CTYPE = 'pt_BR.UTF-8'
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
        CONNECTION LIMIT = -1;
 
---Criando o banco de dados (CODIFICAÇÃO LATIN-1)
-CREATE DATABASE sisq
-  WITH OWNER = sisq
-       ENCODING = 'LATIN1'
-       TABLESPACE = pg_default
-       LC_COLLATE = 'C'
-       LC_CTYPE = 'C'
-       CONNECTION LIMIT = -1;
-
---================================
---Criando as tabelas do banco de dados
-
+--=====================================
+--Criando as tabelas do banco de dados|
+--=====================================
 --criando a tabela usuários
 CREATE TABLE usuarios(
 	id SERIAL PRIMARY KEY,
@@ -49,7 +39,7 @@ CREATE TABLE usuarios(
 INSERT INTO
 	usuarios (nome, email, senha, nivel, status, datacriacao)
 VALUES
-	('ADMINISTRADOR', 'administrador@administrador.com.br', '77037ec13e3dffd356c7c5eded31e6db1de4274b', 2, 1, now());--senha(sha1): 123456
+	('ADMINISTRADOR', 'administrador', '77037ec13e3dffd356c7c5eded31e6db1de4274b', 2, 1, now());--senha(sha1): 123456
 
 --povoando com o usuario COMUM
 INSERT INTO
