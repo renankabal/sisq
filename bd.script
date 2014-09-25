@@ -13,13 +13,22 @@ CREATE ROLE sisq LOGIN
   SUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION; --senha:sisq@sistemap2014
 
 
---Criando o banco de dados
+--Criando o banco de dados (CODIFICAÇÃO UTF-8)
 CREATE DATABASE sisq
   WITH OWNER = sisq
-       ENCODING = 'UTF8'
+       ENCODING = 'LATIN-1'
        TABLESPACE = pg_default
        LC_COLLATE = 'pt_BR.UTF-8'
        LC_CTYPE = 'pt_BR.UTF-8'
+       CONNECTION LIMIT = -1;
+
+--Criando o banco de dados (CODIFICAÇÃO LATIN-1)
+CREATE DATABASE sisq
+  WITH OWNER = sisq
+       ENCODING = 'LATIN1'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'C'
+       LC_CTYPE = 'C'
        CONNECTION LIMIT = -1;
 
 --================================
