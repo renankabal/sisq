@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?xml version="1.0" encoding="utf-8" /?>
+<xml version="1.0" encoding="utf-8">
 <html lang="pt-br">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <head>
