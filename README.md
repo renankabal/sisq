@@ -13,7 +13,6 @@ O sistema foi desenvolvido apenas por mim e não recebeu contribuição de nenhu
 
 Entre em contato com o desenvolvedor
 
-<a href="http://www.facebook.com.br/renan.kabal"><img src="http://static.freepik.com/fotos-gratis/3d-botao-vermelho_30-1270.jpg" width="200"></a>
 
 ## Instalação
 
