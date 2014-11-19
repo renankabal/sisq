@@ -17,6 +17,7 @@ Entre em contato com o desenvolvedor
 ## Instalação
 
 Instale o POSTGRESQL SERVE juntamente com o PGADMIN:
+<img src="http://www.rochedoferreira.com.br/figsgrh.jpg" width="200">
 
 ## FUNÇÃO:
 
