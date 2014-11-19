@@ -13,7 +13,7 @@ O sistema foi desenvolvido apenas por mim e não recebeu contribuição de nenhu
 
 Entre em contato com o desenvolvedor
 
-<a href="http://www.facebook.com.br/renan.kabal"><img src="http://www.codersclan.net/gs_button/?repo_id=325" width="200"></a>
+<a href="http://www.facebook.com.br/renan.kabal"><img src="http://static.freepik.com/fotos-gratis/3d-botao-vermelho_30-1270.jpg" width="200"></a>
 
 ## Instalação
 
@@ -30,5 +30,4 @@ Mede o desempenho empresaria dos funcionários, realizado pelo departamento de R
 
 # Gestão de Pessoas
 
-end
 ```
