@@ -1,4 +1,4 @@
-# SISTEMA DE QUESTIONÁRIO DE AVALIÇÃO - SISQ
+# <small>SISTEMA DE QUESTIONÁRIO DE AVALIÇÃO - SISQ</small>
 <img src="http://blog.qualidadesimples.com.br/wp-content/uploads/2013/12/Untitled-2.png" width="150">
 
 ## Requirements
