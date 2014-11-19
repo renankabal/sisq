@@ -1,19 +1,34 @@
-# SISTEMA DE QUESTIONÁRIO DE AVALIÇÃO - SISQ [![Versão 1.0](https://)]
-====
+# SISTEMA DE QUESTIONÁRIO DE AVALIÇÃO - SISQ
+## Requirements
 
-FUNÇÃO: Mede o desempenho empresaria dos funcionários, realizado pelo departamento de Recursos Humanos da empresa ou instituição
-AUTOR: renan@proesc.com
-CONFIGURAÇÃO: 
-  PHP 5+3
-  Banco de dados POSTGRESQL
-  Estrutura MVC
-  Orientado a Objetos
-  
-  
-SISTEMA DE QUESTIONÁRIO DE AVALIÇÃO - SISQ
-====
+* PHP >= 5.3
+* BANCO DE DADOS POSTGRES >= 9.3
+* APACHE
+* Estrutura MVC
+* Orientado a Objetos
 
+## Suporte
 
-  
-COMO FUNCIONA
-====
+O sistema foi desenvolvido apenas por mim e não recebeu contribuição de nenhum outro desenvolvedor, assim tendo apenas um mantenedor do projeto principal.
+
+Entre em contato com o desenvolvedor
+
+<a href="http://www.facebook.com.br/renan.kabal"><img src="http://www.codersclan.net/gs_button/?repo_id=325" width="200"></a>
+
+## Instalação
+
+Instale o POSTGRESQL SERVE juntamente com o PGADMIN:
+
+## FUNÇÃO:
+
+``` ruby
+Mede o desempenho empresaria dos funcionários, realizado pelo departamento de Recursos Humanos da empresa ou instituição
+
+# Funcionário
+
+# Gerente
+
+# Gestão de Pessoas
+
+end
+```
