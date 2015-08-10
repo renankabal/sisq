@@ -38,5 +38,5 @@ Mede o desempenho empresaria dos funcionários, realizado pelo departamento de R
 ```
 ##Considerações
 
-O sistema foi desenvolvido com ferramentas Open Source para o único proprósito da difusão do conhecimento.
+O sistema foi desenvolvido com ferramentas Open Source para o único propósito da difusão do conhecimento.
 "Uma luz na escuridão"
